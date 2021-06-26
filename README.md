@@ -16,6 +16,10 @@ Make it executable:
 ```bash
 chmod +x copyasffuf.py
 ```
+Capture a http request from burp suite:
+
+![Screenshot (4)](https://user-images.githubusercontent.com/54149916/123514128-44d55180-d65f-11eb-9dd3-d6de6ba1040c.png)
+
 and then, Execute!!
 ```bash
 ./copyasffuf.py -f <request file> -m ffuf
@@ -28,12 +32,10 @@ Works on POST request too!!
 
 ![copyasffuf2](https://user-images.githubusercontent.com/54149916/123513586-fd999180-d65b-11eb-910d-20faeadf2400.JPG)
 
-
 ## Need
 When testing an aggresively firewalled api or target, we need to fuzz multiple times, and creating a vanilla ffuf payload won't get you anywhere because you will just keep adding headers and won't find out why firewall is blocking your request. <br>
 Solution: Capture a working HTTP request, be it GET, POST or PUT, run this python script and you will have, a working ffuf payload.
 You just need to switch wordlist path and FUZZ keyword and you are good to go.
 
-If you find a bug, headover to issues section and fill the form..
 
 Thank you.
