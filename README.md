@@ -30,7 +30,7 @@ Works on POST request too!!
 
 
 ## Need
-When testing an aggresively firewalled api or target, we need to fuzz multiple times, and creating a vanilla ffuf payload won't get you anywhere because you will just keep adding headers and won't find out why firewall is blocking your request.
+When testing an aggresively firewalled api or target, we need to fuzz multiple times, and creating a vanilla ffuf payload won't get you anywhere because you will just keep adding headers and won't find out why firewall is blocking your request. <br>
 Solution: Capture a working HTTP request, be it GET, POST or PUT, run this python script and you will have, a working ffuf payload.
 You just need to switch wordlist path and FUZZ keyword and you are good to go.
 
